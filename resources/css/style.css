@@ -1,6 +1,6 @@
 /*mandatory code*/
 * {
-    margin:0px;
+    margin:0;
     padding:0px;
     box-sizing: border-box;
     border:0; 
@@ -19,7 +19,9 @@ body {
     font-family:'Lato','Arial','sans-serif';
     background-color:white;
     font-weight:100;
-    text-rendering: optimizeLegibility;    
+    text-rendering: optimizeLegibility;   
+    height:100%; 
+     
 } 
 .row {
     max-width:1140px;
@@ -27,24 +29,25 @@ body {
     margin-right:auto;  
 }
 h1 {
-    color:#fdfdfd;
+    color:rgba(242, 242, 71, 0.86);    
+;
 }
 /*header*/
 header {
-    
-    background-image:linear-gradient(rgba(0, 0, 0, 0.71),rgba(0, 0, 0, 0.71)),url(im/ceg2.jpg);
-    height:100vh;
+     background-image:linear-gradient(rgba(0, 0, 0, 0.71),rgba(0, 0, 0, 0.71)),url(im/ceg2.jpg);
+    height:100vh; 
     background-position:center;
     background-size:cover;
-    margin:0 auto 0 auto;
-    
+    margin:0 auto 0 auto; 
+     
 }
+
 .logo {
     border-radius: 30%;
    
     float:left;
     padding:10px;
-    margin:10px 10px auto 10px;
+    margin:20px 0 auto 10px;
 }
 .main-nav {
     float:right;
@@ -77,13 +80,15 @@ header {
     border-bottom:3px solid rgba(10, 255, 0, 0.86);    
 }
 .tagline {
-    position:absolute;
+    position:relative;
     top:45%;
     left:62%;
     width:1140px;
     transform:translate(-50%,-50%);
+    width:100%;
 }
 .btn:link,.btn:visited {
+    position: absolute;
     background-color:rgba(10, 255, 0, 0.86);
     color:whitesmoke;
     padding:10px 30px;
@@ -93,7 +98,9 @@ header {
     font-weight: 600;
     transition:background-color 0.50s,border 0.50s; 
     border:1px solid rgba(10, 255, 0, 0.86);
-    margin-left:100px; 
+    margin-left:200px; 
+    top:100px;
+    left:240px; 
 }
 .btn:hover,.btn:active {
     background-color:rgba(18, 126, 13, 0.72);
